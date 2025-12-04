@@ -1,0 +1,95 @@
+.loginPopup{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color:#00000090 ;
+    display: grid;
+}
+.loginContainer{
+     place-self: center;
+     width: max(23vw,330px);
+     color: #808080;
+     background-color: #fff;
+     display: flex;
+     flex-direction: column;
+     gap: 25px;
+     padding: 25px 30px;
+     border-radius:8px ;
+     -webkit-border-radius:8px ;
+     -moz-border-radius:8px ;
+     -ms-border-radius:8px ;
+     -o-border-radius:8px ;
+     font-size: 14px;
+     animation: fadeIn 0.5s;
+     -webkit-animation: fadeIn 0.7s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.loginTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+
+}
+.loginTitle img{
+    width: 25px;
+    cursor: pointer;
+}
+.loginInputs{
+   display: flex;
+   flex-direction: column;
+   gap: 20px; 
+}
+
+.loginInputs input{
+    outline: none;
+    border: 1px solid #c9c9c9;
+    padding: 10px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.btnn{
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    color: white;
+    background-color: rgb(175, 105, 24);
+    font-size: 15px;
+    cursor: pointer;
+
+}
+.loginCondition{
+    display: flex;
+    align-items: start;
+    gap:8px ;
+    margin-top: -15px;
+
+}
+
+.loginCondition input{
+    margin-top: 5px;
+
+}
+
+.loginPopup p span{
+    color:  rgb(175, 105, 24);
+    font-weight: 500;
+    cursor: pointer;
+}

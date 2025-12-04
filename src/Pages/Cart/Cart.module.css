@@ -1,0 +1,260 @@
+.cart {
+  margin-top: 100px;
+  width: 100%;
+  max-width: 900px;
+  margin-inline: auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+
+.cartItemsTitle {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 15px 20px;
+  color: #555;
+  font-size: 14px;
+  font-weight: 600;
+  border-bottom: 2px solid #e6e6e6;
+}
+
+
+.cartItemsItem {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.3s ease;
+}
+
+.cartItemsItem:hover {
+  background-color: #fafafa;
+}
+
+
+.cartItemsItem img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.cartItemsItem p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+
+.cartItemsItem img[alt="remove"] {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  margin-left: auto;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.cartItemsItem img[alt="remove"]:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+
+.cartTotal {
+  padding: 20px;
+  text-align: right;
+  font-weight: 600;
+  font-size: 16px;
+  color: #444;
+}
+
+
+@media (max-width: 768px) {
+  .cartItemsTitle,
+  .cartItemsItem {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px;
+    text-align: center;
+  }
+
+  .cartItemsTitle p,
+  .cartItemsItem p {
+    font-size: 13px;
+  }
+
+  .cartItemsItem img {
+    margin: 0 auto;
+  }
+}
+.cartBottom {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cartTotal {
+  width: 350px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.cartTotal h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+.cartTotalDetails {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  color: #444;
+  font-size: 15px;
+}
+
+.cartTotal button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 12px 0;
+  border: none;
+  background: tomato;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cartTotal button:hover {
+  background: #ff6f50;
+}
+
+
+.cartBottom {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap; 
+}
+
+
+.cartTotal {
+  flex: 1;
+  min-width: 300px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.cartTotal h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #333;
+}
+
+.cartTotalDetails {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  color: #444;
+  font-size: 15px;
+}
+
+.cartTotal hr {
+  border: none;
+  height: 1px;
+  background-color: #eee;
+}
+
+.cartTotal button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 12px 0;
+  border: none;
+  background: tomato;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cartTotal button:hover {
+  background: #ff6f50;
+}
+
+
+.cartPomocode {
+  flex: 1;
+  min-width: 300px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.cartPomocode p {
+  color: #444;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.cartPromocodeInput {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cartPromocodeInput input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.cartPromocodeInput input:focus {
+  border-color: tomato;
+}
+
+.cartPromocodeInput button {
+  background: tomato;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+  padding-left: 10px;
+}
+
+.cartPromocodeInput button:hover {
+  background: #ff6f50;
+}
+
+
+@media (max-width: 768px) {
+  .cartBottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cartTotal,
+  .cartPomocode {
+    width: 100%;
+  }
+}
